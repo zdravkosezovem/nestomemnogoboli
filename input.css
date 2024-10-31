@@ -65,7 +65,11 @@ header {
 }
 
 #content {
-    padding: 20px;
+    display: flex;
+    padding: 20px 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
 }
 
 .highlight {
@@ -73,13 +77,6 @@ header {
     text-decoration-color: #5FBF9C;
 }
 
-
-.section {
-    margin: 30px 0;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-}
 
 ul {
     margin-left: 20px;
@@ -91,12 +88,6 @@ li {
 
 .burger{
     display: none;
-}
-
-.logo{
-    width: 250px;
-    height: auto;
-    flex-shrink: 0;
 }
 
 .logoa{
@@ -158,7 +149,7 @@ a{
 
 .hero{
     display: flex;
-    height: 76vh;
+    height: 70vh;
     padding: 10px;
     justify-content: center;
     align-items: center;
@@ -172,10 +163,11 @@ h1{
     color: #FFF;
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: 'Baloo 2', sans-serif;
-    font-size: 5vw;
+    font-size: max(4.7vw, 56px);
     margin: 0   ;
     font-style: normal;
     font-weight: 400;
+    text-align: center;
 }
 
 .svi{
@@ -193,11 +185,6 @@ h1{
     align-self: stretch;
 }
 
-.linija{
-    width: 80vw;
-    height: 1px;
-    background: #20503E;
-}
 
 h2{
     margin: 0;
@@ -235,11 +222,11 @@ p{
 }
 
 .dole{
-    display: flex;
-justify-content: center;
+display: flex;
+justify-content: space-between;
 align-items: center;
 align-content: center;
-gap: 45px 37px;
+row-gap: 60px;
 align-self: stretch;
 flex-wrap: wrap;
 }
@@ -319,11 +306,6 @@ align-items: flex-start;
 gap: 89px;
 }
 
-.logotip{
-    width: 20vw;
-    min-width: 240px;
-}
-
 .logotipa{
     min-width: 240px;
 }
@@ -337,10 +319,13 @@ gap: 30px;
 
 .fa-phone, .fa-brands{
     font-size: 40px;
-    width: 40px;
 }
 
-.fa-brands:hover{
+.face{
+    height: 40px;
+}
+
+.face:hover{
     transform: scale(106%);
 }
 
@@ -366,9 +351,10 @@ gap: 30px;
 
 footer{
     display: flex;
-    height: 300px;
-    padding: 20px 100px;
+    padding: 65px 100px;
+    row-gap: 60px;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     background: #20503E;
 }
@@ -412,7 +398,78 @@ footer .nav a:active{
 
 }
 
+@media only screen and (max-width: 972px){
+
+    .logotipi{
+        width: 40vw;
+        min-width: 250px;
+    }
+
+
+    footer{
+        justify-content: center;
+    }
+
+    .qrc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-shrink: 0;
+    }
+
+    .socials{
+        display: flex;
+        width: 261px;
+        justify-content: space-between;
+        align-items: center;
+    }   
+
+}
+
+@media only screen and (max-width: 972px){
+
+    .dole{
+        justify-content: center;
+    }
+    
+}
 
 @media only screen and (max-width: 688px){
+
+    header{
+        display: flex;
+    padding: 20px 25px;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    footer .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        gap: 40px;
+        flex-shrink: 0;
+    }
+
+    .logoam{
+        display: flex;
+        width: 45.608px;
+        height: 50px;
+        flex-shrink: 0;
+    }
+
+    .logom{
+        display: flex;
+    }
+
+    .logoa{
+        display: none;
+    }
+
+
+
 
 }
