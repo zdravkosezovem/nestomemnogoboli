@@ -681,4 +681,19 @@ footer .nav a:active{
         background: rgba(52, 131, 102, 0.20);
     }
 
+    h2{
+        color: #20503E;
+        text-align: center;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "Baloo 2";
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 57.143% */
+    }
+
+    .svi{
+        gap: 20px;
+    }
+
 }
