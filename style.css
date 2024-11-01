@@ -87,7 +87,7 @@ a:active{
 .search-icon {
     position: absolute;
     right: 15px;
-    top: 50%;
+    top: 53%;
     transform: translateY(-50%);
     background: transparent;
     border: none;
@@ -621,6 +621,64 @@ footer .nav a:active{
         padding: 20px 0;
         justify-content: center;
         flex-direction: column;
+    }
+
+
+    .ucenik{
+        display: flex;
+        padding: 25px 35px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+
+    .ucnk{
+        width: 100px;
+        height: 100px;
+    }
+
+    p{
+        width: 183px;
+        color: #20503E;
+        text-align: center;
+        font-family: "Baloo 2";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .ucenik button{
+        display: flex;
+        padding: 15px 24px;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "Baloo 2";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 100% */
+    }
+    
+    .ucenik button:hover{
+        transition: 0.3s;
+        padding: 12px 20px;
+        transform: scale(105%);
+        cursor: pointer;
+        color: #348366;
+    border: 3px solid #348366;
+    background: #FFF;
+    }
+    
+    .ucenik button:active{
+        transition: 0.1s;
+        transform: scale(98%);
+        border: 3px solid #348366;
+        color: #348366;
+        background: rgba(52, 131, 102, 0.20);
     }
 
 }
